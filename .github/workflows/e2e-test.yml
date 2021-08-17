@@ -1,5 +1,8 @@
 name: E2E Test
-on: [push, pull_request]
+on:
+  push:
+    branches-ignore:
+      - '**'
 
 jobs:
   e2e-test:
